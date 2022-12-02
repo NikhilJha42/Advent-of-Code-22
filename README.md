@@ -1,5 +1,8 @@
 # Advent-of-Code-22
 Repository of solutions to Advent-of-Code-22. Completed in JavaScript. Don't just copy these solutions - have fun learning!
+
+I will be updating this repository with the previous day's solution.
+
 ## Set up
 - Log in to [Advent of Code](https://adventofcode.com/).
 - Install Node (this project uses v16.16.0). See the official [documentation](https://nodejs.dev/en/learn/how-to-install-nodejs/) for more details.
