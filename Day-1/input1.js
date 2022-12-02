@@ -1,4 +1,4 @@
-const input = `6669
+export const input1 = `6669
 6434
 6564
 1032
