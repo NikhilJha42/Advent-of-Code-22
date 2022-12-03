@@ -1,5 +1,6 @@
+// Return cumulative Sum of an Array
 export const arrayCumulativeSum = (acc, currentVal) => acc + currentVal;
-// sort function for small data sets - returns new array.
+// Sort function for small data sets - returns new array.
 export const smallDataSort = (arr) => {
     const sorted = [arr[0]]
     for(let i=1; i < arr.length; i++){
@@ -19,3 +20,5 @@ export const smallDataSort = (arr) => {
     }
     return sorted;
 }
+// Split a multiline string into an array of strings separated y a newline.
+export const separateStringByNewlines = (str) => str.split(/\n/);
