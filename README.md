@@ -35,7 +35,7 @@ I will be updating this repository with the previous day's solution.
 - Solve the first part of the puzzle. To see the results of any `console.log()`, run `node Solution1.js` in the terminal from the Day-1 directory.
 - Input your answer.
 - Repeat with the second part of the puzzle. You may want to split your solutions into two separate files for convenience.
-- In the above, if you have a function that may be useful in different puzzles (fe.g., a sort function) you can add it to utilities and export/import them:
+- In the above, if you have a function that may be useful in different puzzles (e.g., a sort function) you can add it to utilities and export/import them:
 ```javascript
   export const someFunction = (parameters) => {...
   } 
