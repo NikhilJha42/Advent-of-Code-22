@@ -6,14 +6,14 @@ import { separateStringByNewlines } from "../utilities.js";
 const inputArrayCrates = separateStringByNewlines(input5Crates);
 let inputArrayMoves = separateStringByNewlines(input5Moves);
 
-// Step 1: Find number of stacks, and the num of characters we need to iterate over on each line.
+// Step 1: Find number of stacks, and the number of characters 
+//we need to iterate over on each line.
 const stackNumbers = inputArrayCrates[inputArrayCrates.length - 1];
 const numOfStacks = parseInt(stackNumbers[stackNumbers.length - 1]);
 const numOfLayers = inputArrayCrates.length - 1;
 
-// Step 2: Iterate over all but the last entry in input5Crates, 
-//and iterate over every four characters to determine 
-// if there is a crate to be added:
+// Step 2: Iterate over each layer of inputArrayCrates to add crates to each
+// stack:
 
 const inputStacks = [];
 for(let i=0; i < numOfStacks; i++){
@@ -29,7 +29,7 @@ for(let i=0; i < numOfLayers; i++){
     }
 }
 
-// Step 3: Map the inputMoves into a useful format:
+// Step 3: Map the inputMoves into an object format:
 inputArrayMoves = inputArrayMoves.map((move) => move.split(/\s/));
 inputArrayMoves = inputArrayMoves.map((move) => move.filter(word => parseInt(word)));
 inputArrayMoves = inputArrayMoves.map((move) => {
@@ -54,7 +54,7 @@ for(const move of inputArrayMoves){
     moveCrates(move, inputStacks);
 }
 
-// Logging the solution to the console.
+// Step 5: Log the solution to the console.
 
 let output = '';
 for (const stack of inputStacks){
