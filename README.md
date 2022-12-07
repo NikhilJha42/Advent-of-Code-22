@@ -34,12 +34,24 @@ I will be updating this repository with the previous day's solution.
 ```
 - Solve the first part of the puzzle. To see the results of any `console.log()`, run `node Solution1.js` in the terminal from the Day-1 directory.
 - Input your answer.
-- Repeat with the second part of the puzzle. You may want to split your solutions into two separate files for convenience.
-- In the above, if you have a function that may be useful in different puzzles (e.g., a sort function) you can add it to utilities and export/import them:
+- Repeat with the second part of the puzzle. 
+- Depending on the complexity of the solutions, you may wish to define functions and classes in separate files and then export them to separate solution files:
 ```javascript
-  export const someFunction = (parameters) => {...
+// classes.js
+export class Class1 {...
+}
+export class Class2 {...
+}
+```
+```javascript
+// Solution.js
+import { Class1, Class2 } from "./classes.js";
+```
+- If you have a function that may be useful in different puzzles (e.g., a sort function) you can add it to utilities and export/import them:
+```javascript
+  export const sortFunction = (parameters) => {...
   } 
 ```
 ```javascript
-  import { someFunction } from '../utilities.js';
+  import { sortFunction } from '../utilities.js';
 ```
