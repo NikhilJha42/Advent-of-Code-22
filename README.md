@@ -15,12 +15,15 @@ I will be updating this repository with the previous day's solution.
   for i in {1..25}; do mkdir Day-$i; done
 ```
 ```
-  for i in {1..25}; do touch Day-$i/Solution$i.js; done
+  for i in {1..25}; do touch Day-$i/Solution$i-a.js; done
+```
+```
+  for i in {1..25}; do touch Day-$i/Solution$i-b.js; done
 ```
 ```
   for i in {1..25}; touch Day-$i/input$i.js; done
 ```
-
+(note: Advent of Code labels the two parts as Parts One and Two - this repository relabels these as Parts A and B for preference.)
 ## Solving the puzzles
 - Copy the day's puzzle input from Advent of Code into the input file.
 - Save as a variable and export as a multiline string, e.g.:
