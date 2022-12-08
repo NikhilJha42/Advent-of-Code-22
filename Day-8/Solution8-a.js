@@ -107,8 +107,4 @@ for(let i=0; i < inputMatrix.length; i++){
     }
 }
 
-// 2019 and 2202 are too high 
-// 869 is too low - above is counting more trees than are visible.
-// Checked outer edges only - this is working correctly.
-
 console.log(visibleCounter);

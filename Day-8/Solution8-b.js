@@ -14,8 +14,6 @@ for(let element of inputArray){
 // (i,j) and returns distance to nearest tree in given direction:
 
 function totalVisibilityToTheLeft(i, j, coordinatesMatrix){ // i: rows, j: cols.
-    const rowLen = coordinatesMatrix[i].length;
-    const colLen = coordinatesMatrix.length;
     const value = coordinatesMatrix[i][j];
     let totalVisibility = 0;
     if(j === 0){
@@ -33,7 +31,6 @@ function totalVisibilityToTheLeft(i, j, coordinatesMatrix){ // i: rows, j: cols.
 
 function totalVisibilityToTheRight(i, j, coordinatesMatrix){ // i: rows, j: cols.
     const rowLen = coordinatesMatrix[i].length;
-    const colLen = coordinatesMatrix.length;
     const value = coordinatesMatrix[i][j];
     let totalVisibility = 0;
     if(j === (rowLen - 1)){
@@ -50,8 +47,6 @@ function totalVisibilityToTheRight(i, j, coordinatesMatrix){ // i: rows, j: cols
 }
 
 function totalVisibilityAbove(i, j, coordinatesMatrix){ // i: rows, j: cols.
-    const rowLen = coordinatesMatrix[i].length;
-    const colLen = coordinatesMatrix.length;
     const value = coordinatesMatrix[i][j];
     let totalVisibility = 0;
     if(i === 0){
@@ -68,7 +63,6 @@ function totalVisibilityAbove(i, j, coordinatesMatrix){ // i: rows, j: cols.
 }
 
 function totalVisibilityBelow(i, j, coordinatesMatrix){ // i: rows, j: cols.
-    const rowLen = coordinatesMatrix[i].length;
     const colLen = coordinatesMatrix.length;
     const value = coordinatesMatrix[i][j];
     let totalVisibility = 0;
