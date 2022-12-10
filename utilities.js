@@ -22,3 +22,18 @@ export const smallDataSort = (arr) => {
 }
 // Split a multiline string into an array of strings separated y a newline.
 export const separateStringByNewlines = (str) => str.split(/\n/);
+// Check if two arrays are index and value equal:
+export const checkTwoArraysAreEqual = (arr1, arr2) => {
+    let output = true;
+    if(arr1.length === arr2.length){
+        for(let i=0; i < arr1.length; i++){
+            if(arr1[i] !== arr2[i]){
+                output = false;
+                break;
+            }
+        }
+    } else{
+        output = false;
+    }
+    return(output);
+}
