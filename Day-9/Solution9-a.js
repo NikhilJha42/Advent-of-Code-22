@@ -13,10 +13,9 @@ for(let i=0; i < inputArray.length; i++){
     const dir = inputArray[i].split(' ')[0];
     const num = parseInt(inputArray[i].split(' ')[1], 10);
     for(let j=0; j < num; j++){
-        head.moveOne(dir);
-        head.updatePrevPositions();
+        head.move(dir);
         tail.moveToBeAdjacentWith(head);
     }
 }
 
-console.log(head.prevPositions.length, tail.prevPositions.length);
+console.log(tail.prevPositions.length);

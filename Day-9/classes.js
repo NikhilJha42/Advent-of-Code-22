@@ -11,6 +11,7 @@ import { checkTwoArraysAreEqual } from "../utilities.js";
 //              moveToBeAdjacentWith(end) - find displacement of end, 
 //              moveOne zero, once or twice as appropriate, and then updatePrevPositions
 
+// See solution files for Step 2
 export class End {
     constructor(start) {
         this._currentPosition = start;
@@ -44,6 +45,11 @@ export class End {
             case 'D':
                 this._currentPosition = [i, j-1];
         }
+    }
+
+    move(dir) {
+        this.moveOne(dir);
+        this.updatePrevPositions();
     }
 
     displacementOf(end) {
@@ -127,35 +133,3 @@ export class End {
         this.updatePrevPositions();
     }
 }
-
-// const testEnd1 = new End([0, 0]);
-// const testEnd2 = new End([0, 0]);
-
-// const testInstructions = `L 1
-// D 2
-// R 1
-// L 1
-// R 2
-// L 1
-// U 2
-// L 2
-// D 1
-// L 2`;
-
-// for(let element of testInstructions.split(/\n/)){
-//     const dir = element.split(' ')[0];
-//     const num = element.split(' ')[1];
-//     for(let k=0; k < num; k++){
-//         testEnd1.moveOne(dir);
-//         testEnd1.updatePrevPositions();
-//         testEnd2.moveToBeAdjacentWith(testEnd1);
-//         console.log(testEnd1.currentPosition, testEnd2.currentPosition);
-//     }
-
-// }
-
-// console.log('testEnd1');
-// console.log(testEnd1.prevPositions);
-// console.log(/\n/);
-// console.log('testEnd2');
-// console.log(testEnd2.prevPositions);
