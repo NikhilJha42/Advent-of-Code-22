@@ -46,7 +46,7 @@ function round(obj){
     }
 }
 
-for(let i=0; i < 20; i++){
+for(let i=0; i < 10000; i++){
     round(monkeys);
 }
 
@@ -58,6 +58,7 @@ for (let name in monkeys){
 
 inspections = smallDataSort(inspections);
 
+// Part B is not 14409351320.
 const highestNumOfInspections = inspections[inspections.length - 1];
 const secondHighestNumOfInspections = inspections[inspections.length - 2];
 console.log(highestNumOfInspections*secondHighestNumOfInspections);

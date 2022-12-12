@@ -3,7 +3,7 @@ const mapNameString = (string) => string.split(':')[0].toLowerCase();
 const mapStartingItemsString = (string) => {
     const newString = string.replace('Starting items:', '');
     let arr = newString.split(', ');
-    arr = arr.map(value => parseInt(value, 10));
+    arr = arr.map(value => (parseInt(value, 10))/10000);
     return arr;
     
 }
@@ -32,7 +32,7 @@ const mapOperationString = (string) => {
 }
 
 const mapTestString = (string) => {
-    return (value) => value/parseInt(string.split('by ')[1], 10);
+    return (value) => value/((parseInt(string.split('by ')[1], 10))/10000);
 }
 
 const mapTrueOrFalseString = (string) => string.split('to ')[1];

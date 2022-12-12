@@ -34,7 +34,7 @@ class Monkey {
         return this._items.length;
     }
     operation(old) {
-        return Math.floor(this._op(old)/3);
+        return this._op(old);
     }
 
     test(value) {
