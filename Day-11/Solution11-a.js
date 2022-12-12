@@ -56,9 +56,13 @@ for (let name in monkeys){
     inspections.push(monkeys[name].numOfInspections);
 }
 
+
 inspections = smallDataSort(inspections);
 
 // Part B is not 14409351320.
+// Part B is not 129556803584.
+// Part B is not 14409472054.
+// Part B is not 14410919314.
 const highestNumOfInspections = inspections[inspections.length - 1];
 const secondHighestNumOfInspections = inspections[inspections.length - 2];
 console.log(highestNumOfInspections*secondHighestNumOfInspections);

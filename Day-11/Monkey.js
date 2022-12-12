@@ -1,3 +1,5 @@
+const factorsProduct = 3*11*19*5*2*7*17*13;
+
 class Monkey {
     constructor(
         name, 
