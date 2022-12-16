@@ -1,7 +1,7 @@
 # Advent-of-Code-22
 Repository of solutions to Advent-of-Code-22. Completed in JavaScript. Don't just copy these solutions - have fun learning!
 
-I will be updating this repository with the previous day's solution.
+Note: Day 11 and 13 incomplete.
 
 ## Set up
 - Log in to [Advent of Code](https://adventofcode.com/).
@@ -57,4 +57,8 @@ import { Class1, Class2 } from "./classes.js";
 ```
 ```javascript
   import { sortFunction } from '../utilities.js';
+```
+- If you want to log some output to a test file (see Day-14, for example) you can run the bash terminal command:
+```
+node.exe SolutionN-a.js > test.txt
 ```
